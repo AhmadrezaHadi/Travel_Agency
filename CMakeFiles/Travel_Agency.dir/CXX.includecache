@@ -6,31 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/Project/Travel_Agency/BankAccounts/account_func.cpp
-account_func.h
-E:/Project/Travel_Agency/BankAccounts/account_func.h
-iostream
--
-stdio.h
--
-stdlib.h
--
-vector
--
-string
--
-../someThingNecessary.h
-E:/Project/Travel_Agency/someThingNecessary.h
-
-E:/Project/Travel_Agency/BankAccounts/account_func.h
-../someThingNecessary.h
-E:/Project/Travel_Agency/someThingNecessary.h
-istream
--
-string
--
+/home/mgh/Desktop/Travel_Agency/Users/users.h
 vector
 -
 
-E:/Project/Travel_Agency/someThingNecessary.h
+/home/mgh/Desktop/Travel_Agency/main.cpp
+Users/users.h
+/home/mgh/Desktop/Travel_Agency/Users/users.h
 

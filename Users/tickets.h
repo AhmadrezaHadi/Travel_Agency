@@ -1,20 +1,14 @@
 #ifndef TRAVEL_AGENCY_TICKETS_H
 #define TRAVEL_AGENCY_TICKETS_H
 #include <vector>
-#include "users.h"
 using namespace std;
 typedef struct ticket{
-    int code_order=0;
-    int code_discount=0;
-    int mode=0;
+    char id[9]={};
     int cost=0;
-    User customer={};
-    //Journey ticket_journey={};
 }Ticket;
-void save_tickets_file(vector<Ticket>);
-vector<Ticket> get_tickets(User);
-vector<Ticket> get_tickets_by_mode(int);
-long int find_ticket(vector<Ticket>,Ticket);
-void add_ticket(User,Ticket);
-void remove_ticket(User,Ticket);
+vector<Ticket> get_tickets();
+long int find_ticket_in_tickets(Ticket);//point or -1
+long int find_ticket_in_file(char[9]);//1 or -1
+int add_ticket(Ticket);//1 or -1
+int remove_ticket(Ticket);//1 or -1
 #endif

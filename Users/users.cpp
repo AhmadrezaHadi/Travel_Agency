@@ -1,6 +1,5 @@
 #include "users.h"
 #include <stdio.h>
-#include <cstdlib>
 #include <string>
 void save_def_file(User _user){
     FILE* fp_d=fopen("Users/usrs/default.dat","ab");
@@ -59,12 +58,15 @@ long int find_user_in_file(char user_name[9]){
     FILE* fp_u=fopen(file_addr.c_str(),"rb");
     if(fp_u==NULL) return -1;
     fclose(fp_u);
+    return 1;
 }
-void add_user(User _user){
+int add_user(User _user){
     if(find_user_in_file(_user.user_name)==-1) {
         save_user_file(_user);
         save_def_file(_user);
+        return 1;
     }
+    return -1;
 }
 User user_login(char user_name[9],char user_pass[9]){
     if(find_user_in_file(user_name)!=-1){

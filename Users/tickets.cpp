@@ -1,58 +1,75 @@
 #include "tickets.h"
-#include "users.h"
 #include <stdio.h>
-void save_tickets_file(vector<Ticket> tickets){
-    FILE* fp=fopen("Users/b_tickets.txt","wb");
-    for(long int i=0;i<tickets.size();i++)
-        fwrite(&(tickets[i]),sizeof(Ticket),1,fp);
-    fclose(fp);
+#include <string>
+void save_def_file(Ticket _ticket){
+    FILE* fp_d=fopen("Users/tics/default.dat","ab");
+    fwrite(&(_ticket.id),sizeof(char),9,fp_d);
+    fclose(fp_d);
 }
-vector<Ticket> get_tickets(User _user){
+void save_ticket_file(Ticket _ticket){
+    string file_addr="Users/tics/"+(string)_ticket.id+".tic";
+    FILE* fp_t=fopen(file_addr.c_str(),"wb");
+    fwrite(&_ticket,sizeof(Ticket),1,fp_t);
+    fclose(fp_t);
+}
+vector<Ticket> get_tickets(){
     vector<Ticket> tickets;
-    FILE* fp=fopen("Users/b_tickets.txt","rb");
-    if(fp!=NULL){
-        while (!feof(fp)){
+    FILE* fp_d=fopen("Users/tics/default.dat","rb");
+    if(fp_d!=NULL){
+        while (true){
+            char id[9]={};
+            fread(&id,sizeof(char),9,fp_d);
+            if(feof(fp_d))break;
+            string file_addr="Users/tics/"+(string)id+".tic";
             Ticket temp={};
-            fread(&temp,sizeof(User),1,fp);
-            int j;
-            for(j=0;j<9 && _user.user_name[j]==temp.customer.user_name[j];j++);
-            if(j==9)tickets.push_back(temp);
+            FILE* fp_t=fopen(file_addr.c_str(),"rb");
+            fread(&temp, sizeof(Ticket),1,fp_t);
+            fclose(fp_t);
+            tickets.push_back(temp);
         }
-        fclose(fp);
+        fclose(fp_d);
     }
     return tickets;
 }
-vector<Ticket> get_tickets_by_mode(int MODE){
-    vector<Ticket> tickets;
-    FILE* fp=fopen("Users/b_tickets.txt","rb");
-    if(fp!=NULL){
-        while (!feof(fp)){
-            Ticket temp={};
-            fread(&temp,sizeof(User),1,fp);
-            if(temp.mode==MODE)tickets.push_back(temp);
-        }
-        fclose(fp);
-    }
-    return tickets;
-}
-long int find_ticket(vector<Ticket> tickets,Ticket _ticket){
+long int find_ticket_in_tickets(Ticket _ticket){
+    vector<Ticket> tickets=get_tickets();
     for(long int i=0;i<tickets.size();i++){
-        if(tickets[i].code_order==_ticket.code_order)return i;
+        int j;
+        for(j=0;j<9 && tickets[i].id[j]==_ticket.id[j];j++);
+        if(j==9){
+            return i;
+        }
     }
     return -1;
 }
-void add_ticket(User _user, Ticket _ticket){
-    vector<Ticket> tickets=get_tickets(_user);
-    if(find_ticket(tickets,_ticket)==-1){
-        tickets.push_back(_ticket);
-        save_tickets_file(tickets);
-    }
+long int find_ticket_in_file(char id[9]){
+    string file_addr="Users/tics/"+(string)id+".tic";
+    FILE* fp_t=fopen(file_addr.c_str(),"rb");
+    if(fp_t==NULL) return -1;
+    fclose(fp_t);
+    return 1;
 }
-void remove_ticket(User _user, Ticket _ticket){
-    vector<Ticket> tickets=get_tickets(_user);
-    long int point=find_ticket(tickets,_ticket);
-    if(point!=-1) {
-        tickets.erase(tickets.begin() + point);
-        save_tickets_file(tickets);
+int add_ticket(Ticket _ticket){
+    if(find_ticket_in_file(_ticket.id)==-1) {
+        save_ticket_file(_ticket);
+        save_def_file(_ticket);
+        return 1;
     }
+    return -1;
 }
+int remove_ticket(Ticket _ticket){
+    if(find_ticket_in_file(_ticket.id)!=-1) {
+        vector<Ticket> tickets=get_tickets();
+        string file_addr="Users/tics/"+(string)_ticket.id+".tic";
+        long int point=find_ticket_in_tickets(_ticket);
+        tickets.erase(tickets.begin()+point);
+        remove("Users/tics/default.dat");
+        remove(file_addr.c_str());
+        for(int i=0;i<tickets.size();i++){
+            save_def_file(tickets[i]);
+        }
+        return 1;
+    }
+    return -1;
+}
+//--------------------------------------------------------------------------
