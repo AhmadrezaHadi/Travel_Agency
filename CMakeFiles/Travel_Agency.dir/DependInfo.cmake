@@ -4,39 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
-  "E:/Project/Travel_Agency/Admin/AdminPanels/drivers.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/drivers.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/AdminPanels/offers.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/offers.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/AdminPanels/setting.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/setting.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/AdminPanels/tickets.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/tickets.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/AdminPanels/transaction.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/transaction.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/AdminPanels/trips.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/trips.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/AdminPanels/users.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/users.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/admin.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/admin.cpp.obj"
-  "E:/Project/Travel_Agency/Admin/adminlogged.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/adminlogged.cpp.obj"
-  "E:/Project/Travel_Agency/BankAccounts/account_func.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/BankAccounts/account_func.cpp.obj"
-  "E:/Project/Travel_Agency/Drivers/drivers.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Drivers/drivers.cpp.obj"
-  "E:/Project/Travel_Agency/Users/users.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/Users/users.cpp.obj"
-  "E:/Project/Travel_Agency/main.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/main.cpp.obj"
-  "E:/Project/Travel_Agency/someThingNecessary.cpp" "E:/Project/Travel_Agency/CMakeFiles/Travel_Agency.dir/someThingNecessary.cpp.obj"
-=======
-  "/home/mgh/Desktop/Travel_Agency/Admin/AdminPanels/drivers.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/drivers.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/AdminPanels/offers.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/offers.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/AdminPanels/setting.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/setting.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/AdminPanels/tickets.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/tickets.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/AdminPanels/transaction.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/transaction.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/AdminPanels/trips.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/trips.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/AdminPanels/users.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/users.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/admin.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/admin.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Admin/adminlogged.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/adminlogged.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/BankAccounts/account_func.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/BankAccounts/account_func.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Drivers/drivers.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Drivers/drivers.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/Users/users.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Users/users.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/main.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/main.cpp.o"
-  "/home/mgh/Desktop/Travel_Agency/someThingNecessary.cpp" "/home/mgh/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/someThingNecessary.cpp.o"
->>>>>>> Mgh
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/AdminPanels/drivers.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/drivers.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/AdminPanels/offers.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/offers.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/AdminPanels/setting.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/setting.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/AdminPanels/tickets.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/tickets.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/AdminPanels/transaction.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/transaction.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/AdminPanels/trips.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/trips.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/AdminPanels/users.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/AdminPanels/users.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/admin.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/admin.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Admin/adminlogged.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Admin/adminlogged.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/BankAccounts/account_func.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/BankAccounts/account_func.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Drivers/drivers.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Drivers/drivers.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/Users/users.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/Users/users.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/main.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/main.cpp.obj"
+  "C:/Users/Ahmadreza/Desktop/Travel_Agency/someThingNecessary.cpp" "C:/Users/Ahmadreza/Desktop/Travel_Agency/CMakeFiles/Travel_Agency.dir/someThingNecessary.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
